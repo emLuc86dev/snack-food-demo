@@ -1,0 +1,178 @@
+.snak-voting {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.snak-voting .hdg_2.snack {
+  margin-bottom: 18px;
+}
+
+.snak-voting .hdg_4.snack {
+  margin-bottom: 18px;
+}
+
+.snak-voting .snack-info {
+  border-top: 1px solid #706e70;
+  width: 30%;
+
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+.snak-voting .snack-content-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 789px;
+}
+
+/* snack-avilable-items here */
+.snak-voting .snack-avilable-items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 340px;
+  /* width: 33.33333%; */
+}
+
+.snak-voting .snack-selection-items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-width: 340px;
+  /* width: 33.33333%; */
+}
+
+.snak-voting .snack-tb-info {
+  background: rgb(26, 119, 131);
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 35px;
+}
+
+.snak-voting .hdg_4.snack-avilable-item {
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.snak-voting .snack-baged {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  background: white;
+  color: rgb(23, 28, 32);
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.snak-voting .snack-baged-num {
+  align-self: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+.snak-voting .snack-baged.snack_amount {
+  background: transparent;
+}
+
+.snak-voting .snack-tb-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 35px;
+  width: 100%;
+  background: rgba(102, 98, 98, 0.1);
+}
+
+.snak-voting .snack-tb-item:hover {
+  transform: scale(1.01);
+  transition: transform 300ms ease;
+}
+
+.snak-voting .snack-tb-item:hover h6,
+.snak-voting .snack-tb-item:hover span {
+  color: #ffffff;
+  font-weight: bold;
+  transform: scale(1.01);
+}
+
+.snak-voting .snack_plus_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 100%;
+  background: rgba(102, 98, 98, 0.6);
+}
+
+.snack-tb-item:nth-child(even) {
+  background: rgba(102, 98, 98, 0.3);
+}
+
+.snak-voting h6.snack-avilable-item {
+  margin-left: 15px;
+}
+/* .snak-voting h6.snack-avilable-item:hover {
+  color: aliceblue;
+  font-weight: bold;
+} */
+
+.snak-voting .snack-tb-item.snack_name {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* snack-selection-items here */
+
+.snak-voting .snack-tb-info {
+  /* background: rgb(26, 119, 131); */
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 35px;
+}
+
+.snack-avilable-items.selection {
+  background: transparent;
+}
+
+.snack-tb-info.selection {
+  background: transparent;
+  flex: 1;
+  align-items: center;
+}
+.snack-avilable-item.section {
+  color: #706e70;
+}
