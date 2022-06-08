@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LogoSVG from "./LogoSVG";
+import LogoSVG from "./svg/LogoSVG";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 
 // const humbeguer = '&#9776;'

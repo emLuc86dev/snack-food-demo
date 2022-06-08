@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 45px;
 }
 
 .snak-voting .hdg_2.snack {
@@ -23,11 +24,12 @@
 }
 
 .snak-voting .snack-content-items {
+  flex: 1;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  /* width: 789px; */
+  width: 100%;
 }
 
 /* snack-avilable-items here */
@@ -38,8 +40,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  min-width: 340px;
-  /* width: 33.33333%; */
 }
 .snak-voting .snack-avilable-items.selection {
   margin-left: 20px;
@@ -68,9 +68,7 @@
   padding-left: 10px;
   font-size: 24px;
 }
-.snak-voting .hdg_4.snack-avilable-item.selection {
-  /* color: #706e70; */
-}
+
 
 .snak-voting .snack-baged {
   display: flex;

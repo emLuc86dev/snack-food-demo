@@ -1,8 +1,8 @@
 import { type } from "os";
 import React, { useState } from "react";
-import EmailSVG from "./EmailSVG";
-import FaxSVG from "./FaxSVG";
-import LocateSVG from "./LocateSVG";
+import EmailSVG from "./svg/EmailSVG";
+import FaxSVG from "./svg/FaxSVG";
+import LocateSVG from "./svg/LocateSVG";
 import SnackVoting from "./SnackVoting";
 
 type checkEventType = React.ChangeEvent<HTMLInputElement>;

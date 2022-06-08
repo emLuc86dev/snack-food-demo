@@ -5,8 +5,8 @@ import Login from "./pages/Login";
 
 import "react-toastify/dist/ReactToastify.min.css";
 import { ToastContainer } from "react-toastify";
-import LogoSVG from "./components/LogoSVG";
-import EmailSVG from "./components/EmailSVG";
+import LogoSVG from "./components/svg/LogoSVG";
+import EmailSVG from "./components/svg/EmailSVG";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Article from "./components/Article";
