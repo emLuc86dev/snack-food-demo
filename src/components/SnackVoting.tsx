@@ -17,10 +17,10 @@ const SnackVoting = () => {
     <div className="snak-voting">
       <h2 className="hdg hdg_2 mix-hdg_dark snack">Snack Voting</h2>
       <h4 className="hdg hdg_4 mix-hdg_dark snack">
-        Vote on the snacks you want to see in this month's relation
+      Vote on the snacks you want to see in this month's rotation
       </h4>
       <div className="snack-info">
-        <span className="assideText snack">3 Votes remanin</span>
+        <span className="assideText snack">3 Votes Remaining</span>
       </div>
       <div className="snack-content-items">
         {/* avilable items here */}
@@ -35,7 +35,7 @@ const SnackVoting = () => {
           {itemsList.map((item) => (
             <div className="snack-tb-item" key={item.name}>
               <div className="snack-tb-item snack_plus_icon">
-                <FaPlus height={"100%"} fill={"#ffffff"} />
+                <FaPlus className="sanck_svg fa-plus" height={"100%"} fill={"#ffffff"} />
               </div>
               <div className="snack-tb-item snack_name">
                 <h6 className="hdg hdg_6 mix-hdg_dark snack-avilable-item">
