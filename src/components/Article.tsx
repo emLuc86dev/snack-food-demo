@@ -4,6 +4,7 @@ import EmailSVG from "./svg/EmailSVG";
 import FaxSVG from "./svg/FaxSVG";
 import LocateSVG from "./svg/LocateSVG";
 import SnackVoting from "./SnackVoting";
+import StockCard from "./StockCard";
 
 type checkEventType = React.ChangeEvent<HTMLInputElement>;
 // | React.MouseEvent<HTMLInputElement>;
@@ -53,6 +54,11 @@ const Article = () => {
           </div>
         </div>
       </div>
+
+      {/* Stock Card here */}
+      <StockCard />
+
+      {/* Snack Voting here */}
       <SnackVoting />
       <div className="site-bd-section site-bd-section_gray">
         <div className="u-constrainer">
