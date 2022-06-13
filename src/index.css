@@ -475,6 +475,16 @@ body {
   }
 }
 
+@media (max-width: 601px) {
+  .u-vr_x3.footer {
+    display: none;
+  }
+}
+@media (max-width: 801px) {
+  .u-vr_x3.footer {
+    display: none;
+  }
+}
 /* ---------------------------------------------------------------------
  footerLogo
 ------------------------------------------------------------------------ */
@@ -833,7 +843,7 @@ body {
     transition: visibility 0.09s, transform 500ms ease-out;
     padding: 5px;
     height: 16.5vh;
-    color: #919191;;
+    color: #919191;
     font-weight: bold;
   }
 

@@ -14,7 +14,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="footer-secondary">
-                        <nav className="hList hList_divided u-vr_x3">
+                        <nav className="hList hList_divided u-vr_x3 footer">
                             <a className="navLink navLink_dark" href="#">Home</a>
                             <a className="navLink navLink_dark" href="#">Current</a>
                             <a className="navLink navLink_dark" href="#">Voting</a>
