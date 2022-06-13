@@ -1,4 +1,3 @@
-import { type } from "os";
 import React, { useState } from "react";
 import EmailSVG from "./svg/EmailSVG";
 import FaxSVG from "./svg/FaxSVG";
@@ -9,29 +8,36 @@ import StockCard from "./StockCard";
 type checkEventType = React.ChangeEvent<HTMLInputElement>;
 // | React.MouseEvent<HTMLInputElement>;
 
-const checkList = [
-  { name: "form-employee", value: "I am a Nerdery employee" },
-  { name: "form-notify", value: "Notify Me for Special Offers!" },
+type checkListType = {
+  name: string;
+  value: string;
+  checked: boolean;
+};
+
+let checkList: checkListType[] = [
+  {
+    name: "form-employee",
+    value: "I am a Nerdery employee",
+    checked: false,
+  },
+  {
+    name: "form-notify",
+    value: "Notify Me for Special Offers!",
+    checked: false,
+  },
 ];
 const Article = () => {
-  const [isChecked, setIsChecked] = useState<boolean[]>(
-    new Array(checkList.length).fill(false)
-  );
+  const [isChecked, setIsChecked] = useState<checkListType[]>(checkList);
 
   const handleCheck = (e: checkEventType) => {
     const findEl = checkList.findIndex((item) => item.name === e.target.value);
-    console.log(findEl);
-    console.log(e.target.name);
+    const saveValue = e.target.checked;
+    checkList[findEl].checked =
+      checkList[findEl].checked === saveValue ? !saveValue : saveValue;
 
-    setIsChecked((prev) => {
-      return [(prev[findEl] = prev[findEl] === true ? false : true)];
-    });
-    console.log("index", findEl, isChecked);
+    setIsChecked([...checkList]);
   };
 
-  const handleClick = (e: React.MouseEvent<HTMLInputElement>) => {
-    // console.log("clicked");
-  };
   return (
     <div className="site-bd">
       <div className="site-bd-section">
@@ -143,65 +149,28 @@ const Article = () => {
                       ></textarea>
                     </div>
                     <div className="inputForm-item">
-                      {checkList.map((item, index: number) => {
+                      {isChecked.map((item, index: number) => {
                         return (
                           <div
                             className="inputForm-item-checkGroup"
                             key={index}
                           >
-                            <label
+                            <input
+                              id={`${item.name}`}
+                              className="u-isVisuallyHidden"
+                              type="checkbox"
+                              name={item.name}
+                              value={item.name}
+                              onChange={handleCheck}
+                              checked={item.checked}
+                              // onClick={handleClick}
+                            />
+                            <label htmlFor={item.name}>{item.value}</label>
 
-                            // for="form-employee"
-                            >
-                              <input
-                                id={`${item.name}`}
-                                className="u-isVisuallyHidden"
-                                type="checkbox"
-                                name={item.name}
-                                value={item.name}
-                                checked={isChecked[index]}
-                                onChange={handleCheck}
-                                // onClick={handleClick}
-                              />
-
-                              {item.value}
-                              {/* I am a Nerdery employee */}
-                            </label>
+                            {item.checked}
                           </div>
                         );
                       })}
-                      {/* <div className="inputForm-item-checkGroup">
-                        <input
-                          id="form-employee"
-                          className="u-isVisuallyHidden"
-                          type="checkbox"
-                          name="checkFirst"
-                          checked={isChecked}
-                          onChange={handleCheck}
-                          // onClick={handleCheck}
-                        />
-                        <label
-                        // for="form-employee"
-                        >
-                          I am a Nerdery employee
-                        </label>
-                      </div> */}
-                      {/* <div className="inputForm-item-checkGroup">
-                        <input
-                          id="form-notify"
-                          className="u-isVisuallyHidden"
-                          type="checkbox"
-                          name="checkSecond"
-                          checked={isChecked}
-                          onChange={handleCheck}
-                          // onClick={handleCheck}
-                        />
-                        <label
-                        // for="form-notify"
-                        >
-                          Notify Me for Special Offers!
-                        </label>
-                      </div> */}
                     </div>
                     <div className="inputForm-item">
                       <input

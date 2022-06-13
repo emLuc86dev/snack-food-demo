@@ -10,9 +10,9 @@ const FaxSVG = () => {
     >
       <path
         fill="none"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         d="M-26 60h-5V44h28v16h-5m-18-6v11h18V54h-18zm18-10v-7h-18v7m15 5h3"
       />
     </svg>

@@ -10,9 +10,9 @@ const LocateSVG = () => {
       <circle fill="none" cx={-17} cy={46} r={4} />
       <path
         fill="none"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         d="M-9 50c-3 7-8 15-8 15s-5-8-8-15 2-13 8-13 11 6 8 13z"
       />
     </svg>

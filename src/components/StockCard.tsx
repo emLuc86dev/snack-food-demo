@@ -1,11 +1,12 @@
 import React from "react";
 import "./StockCard.css";
-import bearNakedImg from "../assets/media/images/stock/bear_naked.png";
-import emerald from "../assets/media/images/stock/emerald.png";
-import kashi from "../assets/media/images/stock/kashi.png";
-import clif_bar from "../assets/media/images/stock/clif_bar.png";
-import nature_valley from "../assets/media/images/stock/nature_valley.png";
-import chobani from "../assets/media/images/stock/chobani.png";
+// import bearNakedImg from "../assets/media/images/stock/bear_naked.png";
+import bearNakedImg from "../assets/media/images/stock/01.jpg";
+import emerald from "../assets/media/images/stock/02.jpg";
+import kashi from "../assets/media/images/stock/03.jpg";
+import clif_bar from "../assets/media/images/stock/04.jpg";
+import nature_valley from "../assets/media/images/stock/05.jpg";
+import chobani from "../assets/media/images/stock/06.jpg";
 
 const stockListImg = [
   {
@@ -60,15 +61,15 @@ const StockCard = () => {
       {/* Stock Card here */}
       <div className="stock_card box_container">
         {stockListImg.map((card) => (
-          <div className="card_data">
-            <div className="stock_card card_item" key={card.name}>
+          <div className="card_data" key={card.name}>
+            <div className="stock_card card_item" >
               <div className="stock_card baged">
                 <div className="stock_card triangle">
                   <span className="stock_card triangle_number">
                     {card.amount}
                   </span>
                 </div>
-              </div>
+              </div> 
               <div className="stock_card picturte">
                 <img src={`${card.img}`} alt={card.name} />
               </div>
