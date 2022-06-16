@@ -60,7 +60,6 @@
 }
 
 .stock_card.card_item:hover {
-  /* transform: scale(1.03) translateY(-5px); */
   transform: scale(1.03) translateY(-10px);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   transition: all 300ms ease-in;

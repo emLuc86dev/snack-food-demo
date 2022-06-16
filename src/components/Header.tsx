@@ -12,15 +12,9 @@ const Header = () => {
     setIsOpen((prevState) => !prevState);
   };
   return (
-    <header className={isOpen ?"site-hd responsive" : "site-hd"}>
+    <header className={isOpen ? "site-hd responsive" : "site-hd"}>
       <div className="masthead u-constrainer">
-        {/* <a className="logo">
-                        <svg viewBox="0 0 900 300">
-                            <use xlink:href="#logo"></use>
-                        </svg>
-                    </a> */}
-        <LogoSVG color={isOpen ? '#0b6e75': '#ffffff'} />
-        {/* <nav className="hList"> */}
+        <LogoSVG color={isOpen ? "#0b6e75" : "#ffffff"} />
         <nav className={isOpen ? "hList responsive" : "hList"}>
           <a className="navLink" href="#">
             Home
@@ -36,16 +30,17 @@ const Header = () => {
           </a>
         </nav>
         <a
-          href="javascript:void(0);"
+          // href="javascript:void(0);"
           className="hamburger"
           onClick={handleClickMenu}
         >
           {isOpen ? (
-            <span className={isOpen ? "closeModale rotate" : "closeModale"}>
-              <FaWindowClose fill={isOpen ? '#919191': '#ffffff'}/>
-            </span>
+            <FaWindowClose
+              fill={isOpen ? "#919191" : "#ffffff"}
+              
+            />
           ) : (
-            <FaBars />
+            <FaBars  />
           )}
         </a>
       </div>
