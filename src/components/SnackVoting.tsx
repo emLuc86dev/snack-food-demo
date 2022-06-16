@@ -23,7 +23,6 @@ const SnackVoting = () => {
         <span className="assideText snack">3 Votes Remaining</span>
       </div>
       <div className="snack-content-items">
-        {/* avilable items here */}
         <div className="snack-avilable-items">
           <div className="snack-tb-info">
             <h4 className="hdg hdg_4 snack-avilable-item">Available Items</h4>
@@ -31,7 +30,6 @@ const SnackVoting = () => {
               <span className="snack-baged-num">{itemsList.length}</span>
             </div>
           </div>
-          {/* here iterable content */}
           {itemsList.map((item) => (
             <div className="snack-tb-item" key={item.name}>
               <div className="snack-tb-item snack_plus_icon">
@@ -48,7 +46,6 @@ const SnackVoting = () => {
             </div>
           ))}
         </div>
-        {/* selection items here */}
         <div className="snack-avilable-items selection">
           <div className="snack-tb-info selection">
             <h4 className="hdg hdg_4 mix-hdg_dark snack-avilable-item selection">
@@ -60,7 +57,6 @@ const SnackVoting = () => {
               </span>
             </div>
           </div>
-          {/* here iterable content */}
           {itemsList.map((item) => (
             <div className="snack-tb-item selection" key={item.name}>
               <div className="snack-tb-item snack_name selection">

@@ -6,7 +6,6 @@ import SnackVoting from "./SnackVoting";
 import StockCard from "./StockCard";
 
 type checkEventType = React.ChangeEvent<HTMLInputElement>;
-// | React.MouseEvent<HTMLInputElement>;
 
 type checkListType = {
   name: string;
@@ -60,11 +59,7 @@ const Article = () => {
           </div>
         </div>
       </div>
-
-      {/* Stock Card here */}
       <StockCard />
-
-      {/* Snack Voting here */}
       <SnackVoting />
       <div className="site-bd-section site-bd-section_gray">
         <div className="u-constrainer">
@@ -81,12 +76,7 @@ const Article = () => {
                 <div className="grid-col grid-col_2of3">
                   <form className="inputForm">
                     <div className="inputForm-item inputForm-item_half">
-                      <label
-                        className="u-isVisuallyHidden"
-                        // for="form-firstname"
-                      >
-                        Fist Name
-                      </label>
+                      <label className="u-isVisuallyHidden">Fist Name</label>
                       <input
                         className="inputForm-text"
                         type="text"
@@ -95,12 +85,7 @@ const Article = () => {
                       />
                     </div>
                     <div className="inputForm-item inputForm-item_half">
-                      <label
-                        className="u-isVisuallyHidden"
-                        //    for="form-lastname"
-                      >
-                        Last Name
-                      </label>
+                      <label className="u-isVisuallyHidden">Last Name</label>
                       <input
                         className="inputForm-text"
                         type="text"
@@ -109,12 +94,7 @@ const Article = () => {
                       />
                     </div>
                     <div className="inputForm-item inputForm-item_half">
-                      <label
-                        className="u-isVisuallyHidden"
-                        //   for="form-email"
-                      >
-                        Email
-                      </label>
+                      <label className="u-isVisuallyHidden">Email</label>
                       <input
                         className="inputForm-text"
                         type="text"
@@ -123,12 +103,7 @@ const Article = () => {
                       />
                     </div>
                     <div className="inputForm-item inputForm-item_half">
-                      <label
-                        className="u-isVisuallyHidden"
-                        // for="form-phonenumber"
-                      >
-                        Phone Number
-                      </label>
+                      <label className="u-isVisuallyHidden">Phone Number</label>
                       <input
                         className="inputForm-text"
                         type="text"
@@ -137,12 +112,7 @@ const Article = () => {
                       />
                     </div>
                     <div className="inputForm-item">
-                      <label
-                        className="u-isVisuallyHidden"
-                        //   for="form-message"
-                      >
-                        Message
-                      </label>{" "}
+                      <label className="u-isVisuallyHidden">Message</label>{" "}
                       <textarea
                         className="inputForm-area"
                         placeholder="Message"
@@ -163,10 +133,8 @@ const Article = () => {
                               value={item.name}
                               onChange={handleCheck}
                               checked={item.checked}
-                              // onClick={handleClick}
                             />
                             <label htmlFor={item.name}>{item.value}</label>
-
                             {item.checked}
                           </div>
                         );
@@ -185,7 +153,6 @@ const Article = () => {
                   <div className="media u-vr_x4">
                     <div className="media-figure">
                       <svg className="icon">
-                        {/* <use xlink:href="#icon-email"></use> */}
                         <EmailSVG />
                       </svg>
                     </div>
@@ -196,7 +163,6 @@ const Article = () => {
                   <div className="media u-vr_x4">
                     <div className="media-figure">
                       <svg className="icon">
-                        {/* <use xlink:href="#icon-fax"></use> */}
                         <FaxSVG />
                       </svg>
                     </div>
@@ -207,7 +173,6 @@ const Article = () => {
                   <div className="media u-vr_x4">
                     <div className="media-figure">
                       <svg className="icon">
-                        {/* <use xlink:href="#icon-locate"></use> */}
                         <LocateSVG />
                       </svg>
                     </div>

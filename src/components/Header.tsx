@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import LogoSVG from "./svg/LogoSVG";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 
-// const humbeguer = '&#9776;'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,7 +29,6 @@ const Header = () => {
           </a>
         </nav>
         <a
-          // href="javascript:void(0);"
           className="hamburger"
           onClick={handleClickMenu}
         >

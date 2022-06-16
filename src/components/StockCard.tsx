@@ -1,6 +1,5 @@
 import React from "react";
 import "./StockCard.css";
-// import bearNakedImg from "../assets/media/images/stock/bear_naked.png";
 import bearNakedImg from "../assets/media/images/stock/01.jpg";
 import emerald from "../assets/media/images/stock/02.jpg";
 import kashi from "../assets/media/images/stock/03.jpg";
@@ -58,7 +57,6 @@ const StockCard = () => {
           Here are the snacks that are available in the Nerdery kitchen now.
         </h4>
       </div>
-      {/* Stock Card here */}
       <div className="stock_card box_container">
         {stockListImg.map((card) => (
           <div className="card_data" key={card.name}>

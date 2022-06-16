@@ -7,9 +7,6 @@ const Footer = () => {
       <div className="footer u-constrainer">
         <div className="footer-primary">
           <a className="footLogo">
-            {/* <svg viewBox="0 0 900 300">
-                               <use xlink:href="#logo"></use>
-                            </svg> */}
             <LogoSVG color="#6b6b6b" />
           </a>
         </div>
