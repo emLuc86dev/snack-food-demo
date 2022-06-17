@@ -5,14 +5,18 @@ import { FaBars, FaWindowClose } from "react-icons/fa";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const humbeguer = "&#9776;";
-
   const handleClickMenu = (e: React.MouseEvent<HTMLAnchorElement>) => {
     setIsOpen((prevState) => !prevState);
   };
   return (
-    <header className={isOpen ? "site-hd responsive" : "site-hd"}>
-      <div className="masthead u-constrainer">
+    <header className="site-hd">
+      <div
+        className={
+          isOpen
+            ? "masthead u-constrainer show_down  "
+            : "masthead u-constrainer"
+        }
+      >
         <LogoSVG color={isOpen ? "#0b6e75" : "#ffffff"} />
         <nav className={isOpen ? "hList responsive" : "hList"}>
           <a className="navLink" href="#">
@@ -28,17 +32,11 @@ const Header = () => {
             Sign Up
           </a>
         </nav>
-        <a
-          className="hamburger"
-          onClick={handleClickMenu}
-        >
+        <a className="hamburger" onClick={handleClickMenu}>
           {isOpen ? (
-            <FaWindowClose
-              fill={isOpen ? "#919191" : "#ffffff"}
-              
-            />
+            <FaWindowClose fill={isOpen ? "#919191" : "#ffffff"} />
           ) : (
-            <FaBars  />
+            <FaBars />
           )}
         </a>
       </div>

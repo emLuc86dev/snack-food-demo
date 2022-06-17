@@ -801,6 +801,18 @@ body {
   z-index: 100;
 }
 
+.masthead.u-constrainer.show_down {
+  padding-bottom: 5px;
+  background: #fff;
+  transform: translateY(-700px);
+  animation: showingdown forwards ease-in 0.3s;
+}
+@keyframes showingdown {
+  to {
+    transform: translateY(0);
+  }
+}
+
 .site-bd-section_gray {
   background-color: #f6f6f6;
 }
@@ -815,11 +827,6 @@ body {
 }
 
 @media screen and (max-width: 801px) {
-  .site-hd.responsive {
-    background: #fff;
-    transition: all 500ms ease-out;
-  }
-
   .hList > * {
     position: relative;
     top: 0;
@@ -840,7 +847,7 @@ body {
 
   .hList.responsive > * {
     display: flex;
-    transition: all 500ms ease-out;
+    /* transition: all 500ms ease-out; */
   }
 
   .hamburger {
